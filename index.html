@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CI/CD Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8"> 
+	<title>Auto Deploy Test - Version 2</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link CSS --> 
+	<link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
 
-  <h1>🚀 CI/CD Dashboard</h1>
-  <div class="status">✅ Deployment Status: SUCCESS</div>
+  <div class="container">
 
-  <div class="card">
-    <h2>📦 Build Info</h2>
-    <p>Version: 1.0.2</p>
-    <p id="time"></p>
+    <div class="banner">
+      🚀 Deployment Successful - Version 2 (Auto Trigger Works!)
+    </div>
+
+    <h1>🚀 CI/CD Dashboard</h1>
+
+    <div class="status">✅ Deployment Status: SUCCESS</div>
+
+    <div class="card">
+      <h2>📦 Build Info</h2>
+      <p>Version: 1.0.2</p>
+      <p id="time"></p>
+    </div>
+
+    <button class="btn" onclick="trigger()">Trigger Action</button>
+
   </div>
 
-  <button class="btn" onclick="trigger()">Trigger Action</button>
-
-  <!-- Link JS -->
   <script src="script.js"></script>
 
 </body>
-</html>
