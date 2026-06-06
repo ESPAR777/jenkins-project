@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>DevOps Dashboard 🚀</title>
+  <meta charset="UTF-8">
+  <title>CI/CD Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>🚀 CI/CD Dashboard</h1>
-    <p id="status">Deployment Status: ✅ SUCCESS</p>
+  <h1>🚀 CI/CD Dashboard</h1>
+  <div class="status">✅ Deployment Status: SUCCESS</div>
 
-    <div class="card">
-      <h2>📦 Build Info</h2>
-      <p>Version: 1.0.0</p>
-      <p id="time"></p>
-    </div>
-
-    <button onclick="deployMessage()">Trigger Action</button>
+  <div class="card">
+    <h2>📦 Build Info</h2>
+    <p>Version: 1.0.2</p>
+    <p id="time"></p>
   </div>
 
+  <button class="btn" onclick="trigger()">Trigger Action</button>
+
+  <!-- Link JS -->
   <script src="script.js"></script>
+
 </body>
 </html>
